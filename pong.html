@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="./dist/pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        <p style="font: 1.5em sans-serif;"> Drag your mouse up and down or press "up" or "down" arrow keys to play! Press "spacebar" to restart the game
+            Happy playing!
+        </p>
+        <svg id="canvas" width="600" height="600" style="background-color:black">
+            <circle id="ball" cx="300" cy="300" r="10" fill="white" />
+            <line x1="300" y1="0" x2="300" y2="600" style="stroke:azure;stroke-width:3" stroke-dasharray="10,10" />
+            <rect id = "paddleUser" x="20" y="230" width="10" height="150" style="fill:blueviolet"></rect>
+            <text id='1' x="150" y="100" fill="white" font-size="30" >0</text>
+            <rect id = "paddleBot" x="570" y="230" width="10" height="150" style="fill:seagreen;"></rect>
+            <text id='2' x="450" y="100" fill="white" font-size="30">0</text>
+            <text id='GG' x="210" y="220" fill="red" font-size="40" ></text>
+            <text id='Winner' x="250" y="250" style="fill: lightcoral;" font-size="30" ></text>
+            
+        </svg>
+        
+            
+        
+        
+        
+    </body>
+    
+</html>
